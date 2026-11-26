@@ -1,0 +1,8 @@
+/target
+Cargo.lock
+*.mrf3
+*.nibblx.tmp
+SPEC_out.md
+SPEC_bad.md
+.DS_Store
+Thumbs.db
