@@ -1,0 +1,15 @@
+[package]
+name = "nibblx512"
+version = "3.1.1"
+edition = "2021"
+authors = ["Akash Patra"]
+description = "NIBBLX-512 v3.1.1 (Seal-Pack): Zero-dependency no_std 512-bit bijective ARX-Chi sponge AEAD with PF1 non-linear pre-fold, P14/P16 schedule, fused 4-way AVX2/NEON SIMD, memory-hard KDF, C-FFI, and streaming CLI"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
